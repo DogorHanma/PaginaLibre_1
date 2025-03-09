@@ -1,0 +1,6 @@
+.estilosEstadios{
+    width: 50%; /* O un valor fijo, como 500px */
+    max-width: 250px; /* Limita el ancho máximo */
+    height: auto; /* Mantiene la proporción */
+
+}
