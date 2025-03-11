@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #00274d 10%, #ff0000 90%);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    background: linear-gradient(180deg, #00274d 10%, #ff0000 90%);
+    color: white;
+    padding: 25px 0;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1s ease-in-out;
+}
+/* Estilos de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 14px 22px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a:hover {
+    background: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+main {
+    padding: 25px;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Animación de deslizamiento */
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Contenedor de trofeos */
+.trofeo-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    border-left: 8px solid #ffcc00;
+}
+
+.trofeo-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    border-left: 8px solid #ffffff;
+}
+
+/* Imágenes de trofeos */
+.trofeo-container img {
+    width: 220px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.trofeo-container img:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* Texto de los trofeos */
+.trofeo-texto h2 {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.trofeo-container:hover .trofeo-texto h2 {
+    color: #ffcc00;
+}
+
+.trofeo-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .trofeo-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .trofeo-container img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
