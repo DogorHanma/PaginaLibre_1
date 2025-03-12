@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(180deg, #00274d 10%, #ff0000 90%);
@@ -7,7 +7,7 @@ body {
     color: white;
 }
 
-/* Estilo del encabezado */
+
 header {
     text-align: center;
     background: linear-gradient(135deg, #000000, #00274d);
@@ -20,13 +20,13 @@ header {
     z-index: 10;
 }
 
-/* Animación de entrada */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Estilos del contenedor principal */
+
 main {
     padding: 25px;
     max-width: 1200px;
@@ -38,13 +38,13 @@ main {
     animation: slideUp 1s ease-in-out;
 }
 
-/* Animación de deslizamiento */
+
 @keyframes slideUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Estilos de navegación */
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -69,7 +69,7 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-/* Contenedor de la sección de inicio */
+
 .inicio-container {
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ nav ul li a:hover {
     border-left: 8px solid #ffffff;
 }
 
-/* Imagen dentro del contenedor de inicio */
+
 .inicio-container img {
     width: 420px;
     height: auto;
@@ -106,7 +106,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/* Estilos del texto en la sección de inicio */
+
 .inicio-texto h2 {
     color: white;
     font-size: 26px;
@@ -126,15 +126,22 @@ nav ul li a:hover {
     font-weight: 500;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-    .inicio-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-    .inicio-container img {
-        width: 100%;
-        max-width: 300px;
-    }
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #000000, #00274d);
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0px -8px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f3f3f3;
+    transition: all 0.3s ease-in-out;
+}
+
+footer:hover {
+    background: linear-gradient(135deg, #00274d,  #000000);
+    color: rgb(245, 245, 245);
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.6);
+    transform: scale(1.02);
 }
